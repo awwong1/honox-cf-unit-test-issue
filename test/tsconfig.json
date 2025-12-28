@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "types": [
+      "../worker-configuration.d.ts",
+      "@cloudflare/vitest-pool-workers" // For `cloudflare:test` types
+    ]
+  },
+  "include": ["./**/*.ts"]
+}
